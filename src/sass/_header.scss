@@ -1,0 +1,24 @@
+.header {
+	&__top {
+		background-color: $mainColor;
+	}
+}
+.menu {
+	&__link {
+		color: $mainTextColor;
+	}
+}
+.top-header {
+	&__container {
+		margin: 0 auto;
+		width: 1490px;
+		@include flex(center, space-between);
+	}
+	&__menu {
+		
+	}
+	&__user {
+		color: $mainTextColor;
+		@include flex(center, center);
+	}
+}
