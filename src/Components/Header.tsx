@@ -61,7 +61,9 @@ const Header: React.FC = () => {
 					</form>
 				</div>
 				<div className="body-header__actions actions-header">
-					<a className="actions-header__location"><PlaceIcon style={{fontSize: '2.7rem'}}/>Київ</a>
+					<div className="actions-header__location">
+					<a className="actions-header__location__link"><PlaceIcon style={{fontSize: '2.7rem'}}/>Київ</a>
+					</div>
  					<div className ="actions-header__phones phones-header">
 						<span className="phones-header__item">044-123-45-67</span>
 						<span className="phones-header__item">044-123-45-67</span>
