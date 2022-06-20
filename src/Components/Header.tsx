@@ -1,5 +1,8 @@
 import React from 'react'
 import FaceSharpIcon from '@mui/icons-material/FaceSharp';
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+import PlaceIcon from '@mui/icons-material/Place';
+import logo from '../images/logo.png'
 // import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 // import CloseSharpIcon from '@mui/icons-material/CloseSharp';
 
@@ -40,10 +43,38 @@ const Header: React.FC = () => {
 				{/* <MenuRoundedIcon style={{color: "white", fontSize: "2.7rem"}}/>
 				<CloseSharpIcon  style={{color: "white", fontSize: "2.7rem"}}/> */}
 				</div>
-				<a href="/#" className='top-header__user'><FaceSharpIcon style={{color: "white", fontSize: "2.7rem"}}/> Кабінет</a>
+				<a href="/#" className='top-header__user'><FaceSharpIcon style={{color: "white", fontSize: "2.7rem"}}/>Кабінет</a>
+				
 			</div>
 		</div>
-		<div className='header__body body-header'></div>
+		<div className='header__body body-header'>
+			<div className="body-header__container">
+				<a href="/#" className="body-header__logo">
+					<img src={logo} alt="logo" />
+				</a>
+				<div className="body-header__search ">
+					<form action="#" className='search-header'>
+						<button type="submit" className="search-header__button">
+							<SearchRoundedIcon style={{fontSize: '2.7rem'}}/>
+						</button>
+						<input type="text" className="search-header__input"  placeholder='Пошук'/>
+					</form>
+				</div>
+				<div className="body-header__actions actions-header">
+					<a className="actions-header__location"><PlaceIcon style={{fontSize: '2.7rem'}}/>Київ</a>
+ 					<div className ="actions-header__phones phones-header">
+						<span className="phones-header__item">044-123-45-67</span>
+						<span className="phones-header__item">044-123-45-67</span>
+					<button className="phones-header__callback default-button">Перетелефонувати
+					<br />
+					мені
+					</button>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
 		<div className='header__catalog catalog-header'></div>
 	</header>
   )
